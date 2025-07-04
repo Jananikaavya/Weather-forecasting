@@ -1,1 +1,26 @@
+/* Light theme specific styles */
+.app.light {
+  --bg-color: #f5f7fa;
+  --text-color: #333;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
+/* Dark theme specific styles */
+.app.dark {
+  --bg-color: #1a1a2e;
+  --text-color: #f5f7fa;
+  --card-bg: rgba(26, 26, 46, 0.8);
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Apply theme variables */
+.app {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.current-weather, .hourly-item, .daily-item, .weather-details div {
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow);
+}
